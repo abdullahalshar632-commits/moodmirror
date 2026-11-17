@@ -1,0 +1,31 @@
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+secrets*
+
+# Real (unsanitized) n8n exports - only commit the TEMPLATE version
+workflow/*_REAL.json
+workflow/*.local.json
+workflow/*_export*.json
+!workflow/MoodMirror_Workflow_TEMPLATE.json
+
+# Local data / user data exports (contains personal mood data)
+*.csv
+*.sqlite
+*.db
+data/
+exports/
+
+# n8n / Node
+node_modules/
+.n8n/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
